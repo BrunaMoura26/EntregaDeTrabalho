@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+
+    <style>
+        p {
+            font-size: 24px; 
+            font-family: Comic; 
+            color: black;    
+    }
+    </style>
+</head>
+<body>
+    
+    <p><strong>Contador de Cliques</strong></p>
+    
+    <button onclick="clicar()">Contador</button>
+    <button onclick="reset()">Reset</button>     
+    <div id="total"></div> 
+
+    <script>
+        let contador = 0;
+
+function clicar() {
+    contador++; // incrementa +1
+    document.getElementById('total').innerText = contador; 
+}
+
+function reset() {
+    contador = 0; 
+    document.getElementById('total').innerText = contador; 
+}
+    </script>
+</body>
+</html>
+
+<!-- consulta 1 = chat, como utilizo variáveis simples para um contador de cliques -->
+ <!-- consulta 2 = chat, não consigo finalizar essa função. pode corrigir
+ <script>
+         function clicar() {
+             let clique = document.getElementsByID('clicar').value
+             
+         } -->
+
+<!-- consulta 3 = 
+como iincluo uma função aqui
+
+<button onclick="clicar()">Contador</button>
+    <button onclick="reset()">Reset</button>     
+    <div id="total"></div> 
+
+    <script>
+        function clicar() {
+            var incremento
+            incremento ++
+            
+
+        } -->
