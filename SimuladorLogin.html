@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <input id="email" type="text" placeholder="E-mail">
+    <input id="senha" type="text" placeholder="Senha">
+    <button onclick="validar()">Login</button>
+    <div id="invalido"></div>
+    <script>
+        function validar() {
+            const email = document.getElementById('email').value; 
+            const senha = document.getElementById('senha').value;
+            var invalido = document.getElementById('invalido').value;
+
+            invalido.innerHTML = "" 
+
+            if (senha === "" || email === "") {
+               invalido.innerHTML = "Campos Inválidos" 
+            }
+        
+        }
+
+    </script>    
+</body>
+</html>
