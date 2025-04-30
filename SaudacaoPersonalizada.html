@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudação com Horário</title>
+</head>
+<body>
+    <input id="nome" type="text" placeholder="Escreva seu nome">
+    <input id="hora" type="text" placeholder="Escreva a hora">
+    <button onclick="data()">Mostrar</button>
+    <div id = "agora"></div>
+    <script>
+        function data() {
+            const nome = document.getElementById('nome').value 
+            const hora = Number(document.getElementById('hora').value);
+            
+            if (hora > 12 && hora <= 18) {
+            document.getElementById("agora").innerHTML = 
+            "Boa tarde " + nome + "! ";
+            }            
+            if (hora < 12) {
+            document.getElementById("agora").innerHTML = 
+            "Bom dia " + nome + "! ";
+            }
+            if (hora > 18) {
+            document.getElementById("agora").innerHTML = 
+            "Boa noite " + nome + "! ";
+            }
+        }              
+
+    </script>
+    
+</body>
+</html>
+
+<!-- consulta 1 = chat, qual o erro no button onclick? 
+
+<input id="nome" type="text" placeholder="Escreva seu nome">
+   <input id="hora" type="text" placeholder="Escreva a hora">
+   <button onclick="mostrar()">Mostrar</button>
+   <div id = "agora"></div>
+   <script>
+       function data() {
+           const nome = document.getElementById('nome').value 
+           const hora = document.getElementById('hora').value;
+           
+           if (hora > 12){
+           document.getElementById("hora").innerHTML = agora = 
+           "Boa tarde " + nome + "! ";
+           }
+       } -->
